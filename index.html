@@ -197,10 +197,9 @@ footer {
     <option value="2">Nhóm thì đơn #2</option>
     <option value="3">Nhóm thì tiếp diễn #1</option>
     <option value="4">Nhóm thì tiếp diễn #2</option>
-    <option value="5">Nhóm thì hoàn thành #1</option>
-    <option value="6">Nhóm thì hoàn thành #2</option>
-    <option value="7">Tổng hợp #1</option>
-    <option value="8">Tổng hợp #2</option>
+    <option value="5">Nhóm thì hoàn thành</option>
+    <option value="6">Tổng hợp #1</option>
+    <option value="7">Tổng hợp #2</option>
 
   </select>
 </div>
@@ -1230,22 +1229,12 @@ const exercises = {
     {
       q: "I ______ this movie three times. (see)",
       answers: ["have seen"],
-      explain: "Hiện tại hoàn thành (+): Trải nghiệm tính đến hiện tại."
+      explain: "Hiện tại hoàn thành (+): Trải nghiệm tính đến hiện tại (three times)."
     },
     {
       q: "They ______ their project yet. (not/finish)",
       answers: ["have not finished", "haven't finished"],
       explain: "Hiện tại hoàn thành (-): Dấu hiệu 'yet' dùng trong câu phủ định."
-    },
-    {
-      q: "______ you ever ______ to Paris? (be)",
-      answers: ["Have", "been"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'ever' hỏi về trải nghiệm."
-    },
-    {
-      q: "By the time we arrived, the train ______. (leave)",
-      answers: ["had left"],
-      explain: "Quá khứ hoàn thành: Hành động xảy ra trước một hành động khác trong quá khứ."
     },
     {
       q: "She ______ in this city since she was a child. (live)",
@@ -1258,29 +1247,9 @@ const exercises = {
       explain: "Hiện tại hoàn thành (+): Dấu hiệu 'for' + khoảng thời gian."
     },
     {
-      q: "He ______ his keys, so he can't get into the house. (lose)",
-      answers: ["has lost"],
-      explain: "Hiện tại hoàn thành (+): Hành động xảy ra ở quá khứ nhưng kết quả còn ở hiện tại."
-    },
-    {
-      q: "I ______ my homework before I went out. (already/finish)",
-      answers: ["had already finished"],
-      explain: "Quá khứ hoàn thành: Hoàn thành trước khi 'went out'."
-    },
-    {
-      q: "______ she ______ from him recently? (hear)",
-      answers: ["Has", "heard"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'recently'."
-    },
-    {
-      q: "They ______ any food for two days. (not/eat)",
-      answers: ["have not eaten", "haven't eaten"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for + khoảng thời gian'."
-    },
-    {
-      q: "When I got to the party, many people ______. (go) home.",
-      answers: ["had gone"],
-      explain: "Quá khứ hoàn thành: Xảy ra trước lúc 'got to the party'."
+      q: "______ you ever ______ to Paris? (be)",
+      answers: ["Have", "been"],
+      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'ever' hỏi về trải nghiệm."
     },
     {
       q: "My sister ______ a lot of photos so far. (take)",
@@ -1288,9 +1257,9 @@ const exercises = {
       explain: "Hiện tại hoàn thành (+): Dấu hiệu 'so far' (cho đến nay)."
     },
     {
-      q: "______ you ______ the letter before you posted it? (read)",
-      answers: ["Had", "read"],
-      explain: "Quá khứ hoàn thành (?): Hành động xảy ra trước một hành động quá khứ khác."
+      q: "He ______ (not/be) to the dentist for ages. (be)",
+      answers: ["has not been", "hasn't been"],
+      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for ages' (đã lâu rồi)."
     },
     {
       q: "This is the first time I ______ this kind of food. (eat)",
@@ -1298,69 +1267,19 @@ const exercises = {
       explain: "Hiện tại hoàn thành: Cấu trúc 'This is the first time...'."
     },
     {
-      q: "He ______ (not/be) to the dentist for ages. (be)",
-      answers: ["has not been", "hasn't been"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for ages'."
-    },
-    {
-      q: "Before she moved to London, she ______ in Manchester. (live)",
-      answers: ["had lived"],
-      explain: "Quá khứ hoàn thành: Xảy ra trước khi 'moved'."
-    },
-    {
-      q: "I ______ the room before the guests arrived. (clean)",
-      answers: ["had cleaned"],
-      explain: "Quá khứ hoàn thành: Xảy ra trước mốc 'arrived'."
-    },
-    {
       q: "How many books ______ you ______ lately? (read)",
       answers: ["have", "read"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'lately'."
-    },
-    {
-      q: "The children ______ their bedroom yet. (not/tidy)",
-      answers: ["have not tidied", "haven't tidied"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'yet'."
-    },
-    {
-      q: "______ he ______ the film before you told him about it? (see)",
-      answers: ["Had", "seen"],
-      explain: "Quá khứ hoàn thành (?): Xảy ra trước 'told'."
+      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'lately' (gần đây)."
     },
     {
       q: "I ______ never ______ such a beautiful girl. (see)",
       answers: ["have", "seen"],
-      explain: "Hiện tại hoàn thành (+): Dấu hiệu 'never' diễn tả trải nghiệm."
-    },
-    {
-      q: "After he ______ his work, he went to sleep. (finish)",
-      answers: ["had finished"],
-      explain: "Quá khứ hoàn thành: Cấu trúc 'After + S + had V3/ed, S + V2/ed'."
+      explain: "Hiện tại hoàn thành (+): Dấu hiệu 'never' diễn tả trải nghiệm chưa từng làm gì."
     },
     {
       q: "We ______ this car since 2015. (have)",
       answers: ["have had"],
-      explain: "Hiện tại hoàn thành (+): Dấu hiệu 'since + mốc thời gian'."
-    },
-    {
-      q: "______ the shop ______ when you got there? (close)",
-      answers: ["Had", "closed"],
-      explain: "Quá khứ hoàn thành (?): Xảy ra trước 'got'."
-    },
-    {
-      q: "I ______ for this company for three years now. (work)",
-      answers: ["have worked"],
-      explain: "Hiện tại hoàn thành (+): Hành động kéo dài đến hiện tại."
-    },
-    {
-      q: "She ______ (not/meet) him since they graduated. (meet)",
-      answers: ["has not met", "hasn't met"],
-      explain: "Hiện tại hoàn thành (-): Cấu trúc S + hasn't V3/ed + since + QKĐ."
-    },
-    {
-      q: "By last Christmas, I ______ my English course. (complete)",
-      answers: ["had completed"],
-      explain: "Quá khứ hoàn thành: Dấu hiệu 'By + mốc thời gian quá khứ'."
+      explain: "Hiện tại hoàn thành (+): Dấu hiệu 'since', V3 của 'have' là 'had'."
     },
     {
       q: "______ you ______ your lunch yet? (have)",
@@ -1368,24 +1287,9 @@ const exercises = {
       explain: "Hiện tại hoàn thành (?): Câu hỏi với 'yet'."
     },
     {
-      q: "The thief ______ away before the police arrived. (run)",
-      answers: ["had run"],
-      explain: "Quá khứ hoàn thành: Chạy mất trước khi cảnh sát đến."
-    },
-    {
       q: "Up to now, we ______ any problems. (not/have)",
       answers: ["have not had", "haven't had"],
       explain: "Hiện tại hoàn thành (-): Dấu hiệu 'Up to now'."
-    },
-    {
-      q: "I ______ him for a long time. (not/see)",
-      answers: ["have not seen", "haven't seen"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for a long time'."
-    },
-    {
-      q: "______ she ______ her dinner when you called? (already/eat)",
-      answers: ["Had", "already eaten"],
-      explain: "Quá khứ hoàn thành (?): Đã hoàn thành trước khi 'called'."
     },
     {
       q: "My parents ______ just ______ from their holiday. (return)",
@@ -1395,22 +1299,12 @@ const exercises = {
     {
       q: "It ______ for two days. (not/rain)",
       answers: ["has not rained", "hasn't rained"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for two days'."
-    },
-    {
-      q: "He ______ the book after he ______ the movie. (read/see)",
-      answers: ["read", "had seen"],
-      explain: "Quá khứ hoàn thành: Xem phim trước, đọc sách sau (V2/ed - had V3/ed)."
+      explain: "Hiện tại hoàn thành (-): Khoảng thời gian 'for + số lượng'."
     },
     {
       q: "How many times ______ she ______ her password? (change)",
       answers: ["has", "changed"],
-      explain: "Hiện tại hoàn thành (?): Hỏi về số lần thực hiện."
-    },
-    {
-      q: "I ______ my wallet at home, so I couldn't buy it. (leave)",
-      answers: ["had left"],
-      explain: "Quá khứ hoàn thành: Để quên ví trước rồi mới 'couldn't buy'."
+      explain: "Hiện tại hoàn thành (?): Hỏi về số lần thực hiện hành động."
     },
     {
       q: "They ______ (not/visit) us since we moved here. (visit)",
@@ -1418,321 +1312,173 @@ const exercises = {
       explain: "Hiện tại hoàn thành (-): Cấu trúc với 'since'."
     },
     {
-      q: "______ you ______ the report before the deadline? (send)",
-      answers: ["Had", "sent"],
-      explain: "Quá khứ hoàn thành (?): Trước một mốc thời gian quá khứ."
-    },
-    {
       q: "I ______ the key! I can't find it anywhere. (lose)",
       answers: ["have lost"],
-      explain: "Hiện tại hoàn thành (+): Kết quả ở hiện tại (không tìm thấy)."
-    },
-    {
-      q: "She ______ all the biscuits by the time her mom came back. (eat)",
-      answers: ["had eaten"],
-      explain: "Quá khứ hoàn thành: Ăn hết trước khi mẹ về."
+      explain: "Hiện tại hoàn thành (+): Hành động vừa xảy ra để lại kết quả ở hiện tại."
     },
     {
       q: "We ______ (not/play) tennis for several weeks. (play)",
       answers: ["have not played", "haven't played"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for + khoảng thời gian'."
+      explain: "Hiện tại hoàn thành (-): Khoảng thời gian 'for several weeks'."
     },
     {
       q: "______ your father ______ home yet? (come)",
       answers: ["Has", "come"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'yet'."
-    },
-    {
-      q: "He ______ (not/study) for the test, so he failed. (study)",
-      answers: ["had not studied", "hadn't studied"],
-      explain: "Quá khứ hoàn thành (-): Không học trước đó nên mới trượt (failed)."
+      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'yet' dùng cuối câu hỏi."
     },
     {
       q: "I ______ to that restaurant many times. (be)",
       answers: ["have been"],
-      explain: "Hiện tại hoàn thành (+): Hỏi về trải nghiệm."
+      explain: "Hiện tại hoàn thành (+): Diễn tả số lần trải nghiệm."
     },
     {
       q: "It's the most interesting book I ______ ever ______. (read)",
       answers: ["have", "read"],
-      explain: "Hiện tại hoàn thành: Cấu trúc so sánh nhất + HTHT."
-    },
-    {
-      q: "By the time I reached the station, the bus ______. (go)",
-      answers: ["had gone"],
-      explain: "Quá khứ hoàn thành: Hành động đi mất xảy ra trước."
+      explain: "Hiện tại hoàn thành: Dùng sau cấu trúc so sánh nhất."
     },
     {
       q: "They ______ in the same house for 20 years. (live)",
       answers: ["have lived"],
-      explain: "Hiện tại hoàn thành (+): Kéo dài đến hiện tại."
-    },
-    {
-      q: "______ she ______ the news before she saw it on TV? (hear)",
-      answers: ["Had", "heard"],
-      explain: "Quá khứ hoàn thành (?): Nghe tin trước khi thấy trên TV."
+      explain: "Hiện tại hoàn thành (+): Hành động kéo dài đến hiện tại."
     },
     {
       q: "I ______ (not/decide) what to do yet. (decide)",
       answers: ["have not decided", "haven't decided"],
       explain: "Hiện tại hoàn thành (-): Dấu hiệu 'yet'."
+    },
+    {
+      q: "______ she ______ from him recently? (hear)",
+      answers: ["Has", "heard"],
+      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'recently'."
+    },
+    {
+      q: "My brother ______ just ______ his homework. (finish)",
+      answers: ["has", "finished"],
+      explain: "Hiện tại hoàn thành (+): Dấu hiệu 'just' đứng sau 'has'."
+    },
+    {
+      q: "We ______ (not/see) her since last week. (see)",
+      answers: ["have not seen", "haven't seen"],
+      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'since last week'."
+    },
+    {
+      q: "______ you ______ the letter already? (post)",
+      answers: ["Have", "posted"],
+      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'already' (đã... rồi)."
+    },
+    {
+      q: "He ______ (not/read) that book before. (read)",
+      answers: ["has not read", "hasn't read"],
+      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'before' (trước đây)."
+    },
+    {
+      q: "She ______ her leg, so she can't walk. (break)",
+      answers: ["has broken"],
+      explain: "Hiện tại hoàn thành (+): Sự việc quá khứ ảnh hưởng hiện tại."
+    },
+    {
+      q: "______ the rain ______ yet? (stop)",
+      answers: ["Has", "stopped"],
+      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'yet'."
+    },
+    {
+      q: "I ______ (not/meet) him for a long time. (meet)",
+      answers: ["have not met", "haven't met"],
+      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for a long time'."
+    },
+    {
+      q: "They ______ many new words this week. (learn)",
+      answers: ["have learned", "have learnt"],
+      explain: "Hiện tại hoàn thành (+): Khoảng thời gian chưa kết thúc (this week)."
+    },
+    {
+      q: "______ you ______ your room recently? (clean)",
+      answers: ["Have", "cleaned"],
+      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'recently'."
+    },
+    {
+      q: "It ______ (not/be) cold this month. (be)",
+      answers: ["has not been", "hasn't been"],
+      explain: "Hiện tại hoàn thành (-): Chủ ngữ 'It' đi với 'hasn't'."
+    },
+    {
+      q: "My parents ______ (already/buy) a new car. (buy)",
+      answers: ["have already bought"],
+      explain: "Hiện tại hoàn thành (+): 'Already' đứng giữa trợ động từ và V3."
+    },
+    {
+      q: "How long ______ she ______ for this company? (work)",
+      answers: ["has", "worked"],
+      explain: "Hiện tại hoàn thành (?): Dùng 'How long' để hỏi về khoảng thời gian."
+    },
+    {
+      q: "I ______ (not/receive) any letters so far. (receive)",
+      answers: ["have not received", "haven't received"],
+      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'so far'."
+    },
+    {
+      q: "The cat ______ its food already. (eat)",
+      answers: ["has eaten"],
+      explain: "Hiện tại hoàn thành (+): Chủ ngữ số ít dùng 'has'."
+    },
+    {
+      q: "______ they ______ to the cinema before? (be)",
+      answers: ["Have", "been"],
+      explain: "Hiện tại hoàn thành (?): Hỏi về kinh nghiệm trước đây."
+    },
+    {
+      q: "He ______ (not/talk) to me since Monday. (talk)",
+      answers: ["has not talked", "hasn't talked"],
+      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'since' + thứ."
+    },
+    {
+      q: "We ______ (already/finish) the project. (finish)",
+      answers: ["have already finished"],
+      explain: "Hiện tại hoàn thành (+): 'Already' nhấn mạnh việc đã xong."
+    },
+    {
+      q: "______ you ______ my glasses anywhere? (see)",
+      answers: ["Have", "seen"],
+      explain: "Hiện tại hoàn thành (?): Hỏi về hành động vừa xảy ra."
+    },
+    {
+      q: "She ______ (never/travel) by plane before. (travel)",
+      answers: ["has never traveled", "has never travelled"],
+      explain: "Hiện tại hoàn thành (+): Trải nghiệm 'chưa bao giờ'."
+    },
+    {
+      q: "The weather ______ (be) very good lately. (be)",
+      answers: ["has been"],
+      explain: "Hiện tại hoàn thành (+): Dấu hiệu 'lately'."
+    },
+    {
+      q: "I ______ (not/finish) reading the news yet. (finish)",
+      answers: ["have not finished", "haven't finished"],
+      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'yet'."
+    },
+    {
+      q: "______ she ______ her dinner yet? (have)",
+      answers: ["Has", "had"],
+      explain: "Hiện tại hoàn thành (?): V3 của 'have' là 'had'."
+    },
+    {
+      q: "They ______ (not/play) together for ages. (play)",
+      answers: ["have not played", "haven't played"],
+      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for ages'."
+    },
+    {
+      q: "My teacher ______ just ______ the classroom. (leave)",
+      answers: ["has", "left"],
+      explain: "Hiện tại hoàn thành (+): Hành động vừa mới diễn ra."
+    },
+    {
+      q: "______ you ______ this movie before? (watch)",
+      answers: ["Have", "watched"],
+      explain: "Hiện tại hoàn thành (?): Hỏi về trải nghiệm xem phim."
     }
   ],
 
   6: [
-    {
-      q: "We ______ any news from him since he moved to Australia. (not/receive)",
-      answers: ["have not received", "haven't received"],
-      explain: "Hiện tại hoàn thành (-): Cấu trúc S + hasn't/haven't V3 + since + QKĐ."
-    },
-    {
-      q: "The movie ______ when we finally arrived at the cinema. (already/start)",
-      answers: ["had already started"],
-      explain: "Quá khứ hoàn thành: Hành động 'bắt đầu' xảy ra trước hành động 'đến'."
-    },
-    {
-      q: "______ you ever ______ such a strange creature before? (see)",
-      answers: ["Have", "seen"],
-      explain: "Hiện tại hoàn thành (?): Hỏi về trải nghiệm tính đến hiện tại."
-    },
-    {
-      q: "By the time I was 15, I ______ how to play the piano. (learn)",
-      answers: ["had learned", "had learnt"],
-      explain: "Quá khứ hoàn thành: 'By the time + mốc thời gian quá khứ' dùng QKHT."
-    },
-    {
-      q: "She ______ her leg, so she can't join the dance competition. (break)",
-      answers: ["has broken"],
-      explain: "Hiện tại hoàn thành (+): Sự việc xảy ra quá khứ để lại kết quả ở hiện tại."
-    },
-    {
-      q: "Everything ______ ready before the meeting began. (be)",
-      answers: ["had been"],
-      explain: "Quá khứ hoàn thành: Trạng thái 'ready' phải có trước khi cuộc họp 'bắt đầu'."
-    },
-    {
-      q: "I ______ that book yet, so please don't tell me the ending. (not/read)",
-      answers: ["have not read", "haven't read"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu nhận biết 'yet'."
-    },
-    {
-      q: "______ he ______ his breakfast when you saw him? (already/have)",
-      answers: ["Had", "already had"],
-      explain: "Quá khứ hoàn thành (?): 'had' thứ nhất là trợ động từ, 'had' thứ hai là V3 của 'have'."
-    },
-    {
-      q: "My parents ______ in that house for over thirty years. (live)",
-      answers: ["have lived"],
-      explain: "Hiện tại hoàn thành (+): Dấu hiệu 'for + khoảng thời gian'."
-    },
-    {
-      q: "The ground was wet because it ______ all night. (rain)",
-      answers: ["had rained"],
-      explain: "Quá khứ hoàn thành: Mưa xảy ra trước lúc ta thấy đất ướt trong quá khứ."
-    },
-    {
-      q: "How long ______ you ______ each other? (know)",
-      answers: ["have", "known"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'How long' dùng để hỏi khoảng thời gian."
-    },
-    {
-      q: "I ______ the report before my boss asked for it. (finish)",
-      answers: ["had finished"],
-      explain: "Quá khứ hoàn thành: Hoàn thành trước khi bị sếp hỏi (asked)."
-    },
-    {
-      q: "We ______ (not/be) to the new shopping mall yet. (be)",
-      answers: ["have not been", "haven't been"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'yet'."
-    },
-    {
-      q: "______ the firemen ______ the fire before it destroyed the house? (put out)",
-      answers: ["Had", "put out"],
-      explain: "Quá khứ hoàn thành (?): Hành động dập lửa phải trước hành động phá hủy."
-    },
-    {
-      q: "This is the best meal I ______ ever ______. (eat)",
-      answers: ["have", "eaten"],
-      explain: "Hiện tại hoàn thành: Cấu trúc so sánh nhất + ever + HTHT."
-    },
-    {
-      q: "He ______ (not/study) English before he moved to Canada. (study)",
-      answers: ["had not studied", "hadn't studied"],
-      explain: "Quá khứ hoàn thành (-): Việc 'không học' xảy ra trước khi 'chuyển đi'."
-    },
-    {
-      q: "Up to now, the scientists ______ a cure for this disease. (not/find)",
-      answers: ["have not found", "haven't found"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'Up to now'."
-    },
-    {
-      q: "After they ______ their dinner, they went for a walk. (have)",
-      answers: ["had had"],
-      explain: "Quá khứ hoàn thành: Hành động ăn tối diễn ra trước khi đi dạo."
-    },
-    {
-      q: "______ you ______ from your brother lately? (hear)",
-      answers: ["Have", "heard"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'lately'."
-    },
-    {
-      q: "I ______ my homework, so now I am free to play. (do)",
-      answers: ["have done"],
-      explain: "Hiện tại hoàn thành (+): Nhấn mạnh kết quả hiện tại là 'đang rảnh'."
-    },
-    {
-      q: "The thief ______ by the time the police arrived. (escape)",
-      answers: ["had escaped"],
-      explain: "Quá khứ hoàn thành: 'By the time + QKĐ, QKHT'."
-    },
-    {
-      q: "We ______ (not/see) each other since we left school. (see)",
-      answers: ["have not seen", "haven't seen"],
-      explain: "Hiện tại hoàn thành (-): Mốc thời gian 'since + QKĐ'."
-    },
-    {
-      q: "______ she ______ her password several times recently? (change)",
-      answers: ["Has", "changed"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'recently'."
-    },
-    {
-      q: "He ______ the letter, so he knew the secret. (already/read)",
-      answers: ["had already read"],
-      explain: "Quá khứ hoàn thành: Việc đọc thư xảy ra trước việc biết bí mật."
-    },
-    {
-      q: "They ______ the house for two years before they sold it. (own)",
-      answers: ["had owned"],
-      explain: "Quá khứ hoàn thành: Sở hữu xong rồi mới bán (sold)."
-    },
-    {
-      q: "I ______ (not/watch) that show for a long time. (watch)",
-      answers: ["have not watched", "haven't watched"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for a long time'."
-    },
-    {
-      q: "______ you ______ the door before you left? (lock)",
-      answers: ["Had", "locked"],
-      explain: "Quá khứ hoàn thành (?): Khóa cửa trước khi rời đi (left)."
-    },
-    {
-      q: "My sister ______ just ______ her exam. She is very happy. (pass)",
-      answers: ["has", "passed"],
-      explain: "Hiện tại hoàn thành (+): Dấu hiệu 'just'."
-    },
-    {
-      q: "By last year, she ______ ten novels. (write)",
-      answers: ["had written"],
-      explain: "Quá khứ hoàn thành: 'By + mốc quá khứ' dùng QKHT."
-    },
-    {
-      q: "We ______ (not/finish) our dinner when the phone rang. (finish)",
-      answers: ["had not finished", "hadn't finished"],
-      explain: "Quá khứ hoàn thành (-): Chưa xong việc này thì việc kia đã tới."
-    },
-    {
-      q: "______ your father ______ to work yet? (go)",
-      answers: ["Has", "gone"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'yet'."
-    },
-    {
-      q: "I ______ never ______ such a tall building before. (see)",
-      answers: ["had", "seen"],
-      explain: "Quá khứ hoàn thành: Trải nghiệm tính đến một mốc trong quá khứ."
-    },
-    {
-      q: "She ______ (not/talk) to me for weeks. (talk)",
-      answers: ["has not talked", "hasn't talked"],
-      explain: "Hiện tại hoàn thành (-): Khoảng thời gian 'for weeks'."
-    },
-    {
-      q: "The lights went out because we ______ the bill. (not/pay)",
-      answers: ["had not paid", "hadn't paid"],
-      explain: "Quá khứ hoàn thành (-): Không trả tiền trước đó nên mới mất điện."
-    },
-    {
-      q: "______ you ______ the news? Everyone is talking about it. (hear)",
-      answers: ["Have", "heard"],
-      explain: "Hiện tại hoàn thành (?): Tin tức vừa mới xảy ra/đang nóng hổi."
-    },
-    {
-      q: "I ______ all the work by the time you arrived. (already/do)",
-      answers: ["had already done"],
-      explain: "Quá khứ hoàn thành: Xong trước khi 'arrived'."
-    },
-    {
-      q: "The cat ______ (not/eat) anything since yesterday. (eat)",
-      answers: ["has not eaten", "hasn't eaten"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'since yesterday'."
-    },
-    {
-      q: "He ______ (not/see) his parents for five years before he returned home. (see)",
-      answers: ["had not seen", "hadn't seen"],
-      explain: "Quá khứ hoàn thành (-): Khoảng thời gian trước một hành động quá khứ."
-    },
-    {
-      q: "______ the concert ______ when you reached the stadium? (begin)",
-      answers: ["Had", "begun"],
-      explain: "Quá khứ hoàn thành (?): Bắt đầu trước khi ta đến."
-    },
-    {
-      q: "We ______ this car for a decade now. (have)",
-      answers: ["have had"],
-      explain: "Hiện tại hoàn thành (+): Have thứ nhất là trợ động từ, have thứ hai là V3."
-    },
-    {
-      q: "I ______ (not/meet) her before that day. (meet)",
-      answers: ["had not met", "hadn't met"],
-      explain: "Quá khứ hoàn thành (-): Trước một ngày trong quá khứ."
-    },
-    {
-      q: "______ she ______ her lunch yet? (have)",
-      answers: ["Has", "had"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'yet'."
-    },
-    {
-      q: "The teacher ______ the results before the bell rang. (announce)",
-      answers: ["had announced"],
-      explain: "Quá khứ hoàn thành: Thông báo trước khi chuông reo."
-    },
-    {
-      q: "They ______ (not/play) football since the rain started. (play)",
-      answers: ["have not played", "haven't played"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'since'."
-    },
-    {
-      q: "I ______ for him for an hour before he finally showed up. (wait)",
-      answers: ["had waited"],
-      explain: "Quá khứ hoàn thành: Đợi xong rồi anh ta mới tới."
-    },
-    {
-      q: "______ you ______ the room before they came? (clean)",
-      answers: ["Had", "cleaned"],
-      explain: "Quá khứ hoàn thành (?): Trước một hành động quá khứ khác."
-    },
-    {
-      q: "It ______ for several months in this area. (not/rain)",
-      answers: ["has not rained", "hasn't rained"],
-      explain: "Hiện tại hoàn thành (-): Dấu hiệu 'for several months'."
-    },
-    {
-      q: "He ______ (not/be) to a zoo until last week. (be)",
-      answers: ["had not been", "hadn't been"],
-      explain: "Quá khứ hoàn thành (-): Dấu hiệu 'until + mốc quá khứ'."
-    },
-    {
-      q: "______ the children ______ their bedroom yet? (tidy)",
-      answers: ["Have", "tidied"],
-      explain: "Hiện tại hoàn thành (?): Dấu hiệu 'yet'."
-    },
-    {
-      q: "By the time the sun rose, the birds ______ singing. (start)",
-      answers: ["had started"],
-      explain: "Quá khứ hoàn thành: Bắt đầu hót trước khi mặt trời mọc."
-    }
-  ],
-
-  7: [
     {
       q: "Look at those black clouds! It ______ rain. (be going to)",
       answers: ["is going to"],
@@ -1742,11 +1488,6 @@ const exercises = {
       q: "I ______ my old teacher at the market yesterday. (meet)",
       answers: ["met"],
       explain: "Quá khứ đơn: Hành động đã xảy ra và chấm dứt (yesterday)."
-    },
-    {
-      q: "They ______ for ten hours when we finally found them. (sleep)",
-      answers: ["had slept"],
-      explain: "Quá khứ hoàn thành: Hành động xảy ra trước một mốc quá khứ."
     },
     {
       q: "Listen! The birds ______ in the garden. (sing)",
@@ -1782,11 +1523,6 @@ const exercises = {
       q: "Water ______ at 100 degrees Celsius. (boil)",
       answers: ["boils"],
       explain: "Hiện tại đơn: Sự thật hiển nhiên."
-    },
-    {
-      q: "After she ______ the letter, she cried. (read)",
-      answers: ["had read"],
-      explain: "Quá khứ hoàn thành: Hành động xảy ra trước (đọc xong mới khóc)."
     },
     {
       q: "______ you ______ to the party last night? (go)",
@@ -1827,11 +1563,6 @@ const exercises = {
       q: "______ your mother ______ a cake for the party tomorrow? (make)",
       answers: ["Is", "going to make"],
       explain: "Tương lai gần: Hỏi về một dự định đã định sẵn."
-    },
-    {
-      q: "By last year, they ______ English for five years. (study)",
-      answers: ["had studied"],
-      explain: "Quá khứ hoàn thành: 'By + mốc quá khứ'."
     },
     {
       q: "The sun ______ in the East. (rise)",
@@ -1919,11 +1650,6 @@ const exercises = {
       explain: "Hiện tại tiếp diễn: Dấu hiệu 'now'."
     },
     {
-      q: "By the time he came, the food ______. (get) cold.",
-      answers: ["had got", "had gotten"],
-      explain: "Quá khứ hoàn thành: 'By the time + QKĐ, QKHT'."
-    },
-    {
       q: "If it rains, we ______ at home. (stay)",
       answers: ["will stay"],
       explain: "Tương lai đơn: Câu điều kiện loại 1."
@@ -1954,11 +1680,6 @@ const exercises = {
       explain: "Quá khứ tiếp diễn: Phủ định hành động đang diễn ra."
     },
     {
-      q: "______ she ______ her homework before she watched TV? (finish)",
-      answers: ["Had", "finished"],
-      explain: "Quá khứ hoàn thành: Hoàn thành trước khi làm việc khác."
-    },
-    {
       q: "I ______ my hair cut this afternoon. I've booked an appointment. (have)",
       answers: ["am going to have"],
       explain: "Tương lai gần: Đã có lịch hẹn trước."
@@ -1967,11 +1688,6 @@ const exercises = {
       q: "The flowers ______ (not/look) fresh today. (look)",
       answers: ["do not look", "don't look"],
       explain: "Hiện tại đơn: Động từ chỉ trạng thái (stative verb)."
-    },
-    {
-      q: "When I arrived, the meeting ______. (already/end)",
-      answers: ["had already ended"],
-      explain: "Quá khứ hoàn thành: Kết thúc trước khi ta đến."
     },
     {
       q: "______ you ______ the letter yet? (send)",
@@ -1986,12 +1702,7 @@ const exercises = {
   ],
 
 
-  8: [
-    {
-      q: "My uncle ______ in this factory for 20 years before he retired. (work)",
-      answers: ["had worked"],
-      explain: "Quá khứ hoàn thành: Hành động xảy ra và kéo dài trước một mốc quá khứ (retired)."
-    },
+  7: [
     {
       q: "I ______ a dentist appointment at 3 p.m today. (have)",
       answers: ["am going to have"],
@@ -2016,11 +1727,6 @@ const exercises = {
       q: "I ______ you with the cooking if you are tired. (help)",
       answers: ["will help"],
       explain: "Tương lai đơn: Đưa ra lời đề nghị giúp đỡ ngay tại thời điểm nói."
-    },
-    {
-      q: "By the time the police arrived, the red car ______. (disappear)",
-      answers: ["had disappeared"],
-      explain: "Quá khứ hoàn thành: Hành động xảy ra trước hành động 'arrived'."
     },
     {
       q: "Look at the man on the bridge! He ______ jump! (be going to)",
@@ -2063,11 +1769,6 @@ const exercises = {
       explain: "Tương lai gần: Hỏi về dự định, kế hoạch."
     },
     {
-      q: "He ______ (not/finish) his lunch before the bell rang. (finish)",
-      answers: ["had not finished", "hadn't finished"],
-      explain: "Quá khứ hoàn thành: Hành động chưa hoàn thành trước một mốc quá khứ."
-    },
-    {
       q: "Listen! Someone ______ my name outside. (call)",
       answers: ["is calling"],
       explain: "Hiện tại tiếp diễn: Hành động đang xảy ra (Listen!)."
@@ -2096,11 +1797,6 @@ const exercises = {
       q: "I ______ my project this weekend. I have all the materials. (complete)",
       answers: ["am going to complete"],
       explain: "Tương lai gần: Dự định đã có sự chuẩn bị."
-    },
-    {
-      q: "By the time I reached the cinema, the film ______. (start)",
-      answers: ["had started"],
-      explain: "Quá khứ hoàn thành: 'By the time + QKĐ, QKHT'."
     },
     {
       q: "______ you ______ anything at the moment? (read)",
@@ -2157,13 +1853,7 @@ const exercises = {
       answers: ["were not", "weren't"],
       explain: "Quá khứ đơn với To be: Phản ứng tại một thời điểm quá khứ."
     },
-    {
-      q: "By the year 2010, he ______ three books. (write)",
-      answers: ["had written"],
-      explain: "Quá khứ hoàn thành: Hoàn thành trước một mốc thời gian quá khứ."
-    },
-    {
-      q: "______ your parents ______ a new car next month? (buy)",
+   { q: "______ your parents ______ a new car next month? (buy)",
       answers: ["Are", "going to buy"],
       explain: "Tương lai gần: Hỏi về kế hoạch đã định."
     },
@@ -2186,11 +1876,6 @@ const exercises = {
       q: "I ______ the window already. (close)",
       answers: ["have closed"],
       explain: "Hiện tại hoàn thành: Dấu hiệu 'already'."
-    },
-    {
-      q: "We ______ (not/see) the film before last night. (watch)",
-      answers: ["had not watched", "hadn't watched"],
-      explain: "Quá khứ hoàn thành: Chưa làm việc đó trước một mốc quá khứ."
     },
     {
       q: "Look! The cat ______ up that tree. (climb)",
@@ -2226,11 +1911,6 @@ const exercises = {
       q: "I ______ my bike to school tomorrow. (ride)",
       answers: ["am going to ride"],
       explain: "Tương lai gần: Dự định cá nhân."
-    },
-    {
-      q: "______ she ______ the news before she saw it on TV? (hear)",
-      answers: ["Had", "heard"],
-      explain: "Quá khứ hoàn thành: Xảy ra trước một hành động quá khứ khác."
     },
     {
       q: "I ______ (not/be) to that city for ages. (be)",
