@@ -115,6 +115,68 @@ footer {
   color: #7a4e3e;
   background-color: #fff0e1;
 }
+
+/* FIREWORKS EFFECT */
+.firework {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.firework span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: gold;
+  border-radius: 50%;
+  animation: explode 1.2s ease-out forwards;
+}
+
+@keyframes explode {
+  from {
+    transform: translate(0,0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
+}
+
+.firework {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.firework span {
+  position: absolute;
+  width: 10px;   /* TO HƠN */
+  height: 10px;  /* TO HƠN */
+  background: gold;
+  border-radius: 50%;
+  animation: explode 1.3s ease-out forwards;
+  box-shadow: 0 0 10px white; /* phát sáng */
+}
+
+@keyframes explode {
+  from {
+    transform: translate(0,0) scale(1.2);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
+}
+
+
 </style>
 </head>
 
@@ -2235,14 +2297,47 @@ function checkAnswer(idx, topic){
     if(val !== ans) correct = false;
   }
 
-  if(correct){
-    res.innerHTML = "Giỏi quá!";
-    res.style.color = "green";
-  } else {
+if(correct){
+  res.innerHTML = "Đúng rồi!";
+  res.style.color = "green";
+  showFireworks(); // 🎆 THÊM DÒNG NÀY
+} else {
+
     res.innerHTML = `Chưa đúng rồi! → ${item.answers.join(" / ")}<br>${item.explain}`;
     res.style.color = "red";
   }
 }
+
+
+function showFireworks(){
+  const firework = document.createElement("div");
+  firework.className = "firework";
+  firework.style.left = "50%";
+  firework.style.top = "50%";
+
+  const particles = 60; // tăng số tia
+  const radius = 350;   // TĂNG GẤP HƠN 2 LẦN
+
+  for(let i=0; i<particles; i++){
+    const span = document.createElement("span");
+    const angle = (2 * Math.PI / particles) * i;
+
+    const x = Math.cos(angle) * radius;
+    const y = Math.sin(angle) * radius;
+
+    span.style.setProperty("--x", x + "px");
+    span.style.setProperty("--y", y + "px");
+
+    span.style.background = ["gold","red","aqua","pink","lime","white","orange"][Math.floor(Math.random()*7)];
+
+    firework.appendChild(span);
+  }
+
+  document.body.appendChild(firework);
+
+  setTimeout(() => firework.remove(), 1500);
+}
+
 
 /******** INIT ********/
 document.getElementById("topicSelect").onchange = loadExercises;
