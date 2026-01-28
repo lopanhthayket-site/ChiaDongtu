@@ -3,178 +3,733 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luyện Chia Động từ</title>
+<title>Dạng bài: Chia Động từ - Lớp Anh thầy Kết</title>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8f0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-  header {
-    background-color: #ffd6ba;
-    color: #7a4e3e;
-    padding: 30px 20px 45px;
-    font-size: 32px;
-    font-weight: bold;
-    position: relative;
-  }
+/* HEADER */
+header {
+  background-color: #ffd6ba;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: #7a4e3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
 
-  /* Icon Home */
-  .home-link {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 28px;
-    color: #7a4e3e;
-    text-decoration: none;
-    transition: transform 0.2s, color 0.2s;
-  }
+.header-left a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  color: #7a4e3e;
+  text-decoration: none;
+}
+.header-left i { font-size: 26px; }
 
-  .home-link:hover {
-    color: #ffb3ba;
-    transform: scale(1.15);
-  }
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+}
 
-  .toc-container {
-    margin: 40px auto;
-    max-width: 1100px;
-    padding: 20px;
-  }
+/* SELECT */
+.top-select {
+  margin: 20px 40px;
+  text-align: left;
+}
+select {
+  padding: 8px 14px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid #a0e7e5;
+  background-color: #e3fdfd;
+}
 
-  .toc-title {
-    font-size: 28px;
-    color: #7a4e3e;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
+/* EXERCISE */
+.exercise {
+  width: 85%;
+  margin: 20px auto;
+  font-size: 22px;
+  text-align: left;
+}
 
-  .toc-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-  }
+.q-box {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border-left: 6px solid #ffd6ba;
+  margin-bottom: 18px;
+}
 
-  .toc-item {
-    background-color: #a0e7e5;
-    padding: 15px;
-    border-radius: 12px;
-    font-size: 20px;
-    color: #3a3a3a;
-    cursor: pointer;
-    transition: transform 0.25s, background-color 0.25s;
-    text-decoration: none;
-    display: block;
-  }
+.blankInput {
+  width: 110px;
+  font-size: 18px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 2px solid #a0e7e5;
+  text-align: center;
+  margin: 0 3px;
+}
 
-  .toc-item:hover {
-    background-color: #ffb3ba;
-    transform: translateY(-3px);
-  }
+.check-btn {
+  margin-top: 8px;
+  background-color: #a0e7e5;
+  border: none;
+  padding: 6px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.check-btn:hover {
+  background-color: #ffb3ba;
+}
 
-  footer {
-    margin-top: 50px;
-    padding: 20px;
-    font-size: 16px;
-    color: #555;
-    background-color: #fff0e1;
-  }
+.result {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+}
 
-  @media (max-width: 900px) {
-    .toc-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+.blankMark {
+  font-weight: bold;
+  color: #1d3557;
+}
 
-  @media (max-width: 600px) {
-    .toc-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .toc-item {
-      font-size: 18px;
-    }
-  }
+footer {
+  font-size: 20px;
+  margin-top: 40px;
+  padding: 15px;
+  color: #7a4e3e;
+  background-color: #fff0e1;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-  <a href="https://lopanhthayket-site.github.io/lopanhthayket_thcs/" class="home-link" title="Về trang chủ">
-    <i class="fas fa-home"></i>
-  </a>
-  Luyện Dạng: Chia Động từ
+  <div class="header-left">
+    <a href="https://lopanhthayket-site.github.io/lopanhthayket_thcs/">
+      <i class="fa-solid fa-house"></i> Home
+    </a>
+  </div>
+  <div class="header-center">Dạng bài: Chia Động từ - Lớp Anh thầy Kết</div>
 </header>
 
-<div class="toc-container">
-  <div class="toc-title">Danh sách bộ đề</div>
-  <div class="toc-grid">
+<div class="top-select">
+  <select id="topicSelect">
+    <option value="1">Nhóm thì đơn #1</option>
+    <option value="2">Nhóm thì đơn #2</option>
+    <option value="3">Nhóm thì tiếp diễn #1</option>
+    <option value="4">Nhóm thì tiếp diễn #2</option>
+    <option value="5">Nhóm thì hoàn thành #1</option>
+    <option value="6">Nhóm thì hoàn thành #2</option>
+    <option value="7">Tổng hợp #1</option>
+    <option value="8">Tổng hợp #2</option>
 
-    <!-- Đổi link theo ý bạn -->
-    <!-- 40 đề mẫu -->
-    <!-- Bạn copy thêm nếu nhiều hơn -->
-    <!-- Block 01-40 -->
-    <!-- Just paste more -->
-    <!-- Start -->
-    <a href="#" class="toc-item">Đề 01</a>
-    <a href="#" class="toc-item">Đề 02</a>
-    <a href="#" class="toc-item">Đề 03</a>
-    <a href="#" class="toc-item">Đề 04</a>
-    <a href="#" class="toc-item">Đề 05</a>
-
-    <a href="#" class="toc-item">Đề 06</a>
-    <a href="#" class="toc-item">Đề 07</a>
-    <a href="#" class="toc-item">Đề 08</a>
-    <a href="#" class="toc-item">Đề 09</a>
-    <a href="#" class="toc-item">Đề 10</a>
-
-    <a href="#" class="toc-item">Đề 11</a>
-    <a href="#" class="toc-item">Đề 12</a>
-    <a href="#" class="toc-item">Đề 13</a>
-    <a href="#" class="toc-item">Đề 14</a>
-    <a href="#" class="toc-item">Đề 15</a>
-
-    <a href="#" class="toc-item">Đề 16</a>
-    <a href="#" class="toc-item">Đề 17</a>
-    <a href="#" class="toc-item">Đề 18</a>
-    <a href="#" class="toc-item">Đề 19</a>
-    <a href="#" class="toc-item">Đề 20</a>
-
-    <a href="#" class="toc-item">Đề 21</a>
-    <a href="#" class="toc-item">Đề 22</a>
-    <a href="#" class="toc-item">Đề 23</a>
-    <a href="#" class="toc-item">Đề 24</a>
-    <a href="#" class="toc-item">Đề 25</a>
-
-    <a href="#" class="toc-item">Đề 26</a>
-    <a href="#" class="toc-item">Đề 27</a>
-    <a href="#" class="toc-item">Đề 28</a>
-    <a href="#" class="toc-item">Đề 29</a>
-    <a href="#" class="toc-item">Đề 30</a>
-
-    <a href="#" class="toc-item">Đề 31</a>
-    <a href="#" class="toc-item">Đề 32</a>
-    <a href="#" class="toc-item">Đề 33</a>
-    <a href="#" class="toc-item">Đề 34</a>
-    <a href="#" class="toc-item">Đề 35</a>
-
-    <a href="#" class="toc-item">Đề 36</a>
-    <a href="#" class="toc-item">Đề 37</a>
-    <a href="#" class="toc-item">Đề 38</a>
-    <a href="#" class="toc-item">Đề 39</a>
-    <a href="#" class="toc-item">Đề 40</a>
-
-
-    <!-- End -->
-
-  </div>
+  </select>
 </div>
 
-<footer>
-  © 2026 Lớp Anh thầy Kết. All rights reserved.
-</footer>
+<div class="exercise" id="exerciseBox"></div>
+
+<footer>Chúc bạn học tốt!</footer>
+
+<script>
+
+/******** DATA ********/
+const exercises = {
+  1: [
+    {
+      q: "They ______ at home yesterday. (be)",
+      answers: ["were"],
+      explain: "Yesterday → quá khứ đơn, They → were."
+    },
+    {
+      q: "_______ he ______ to school by bike every day? (go)",
+      answers: ["does", "go"],
+      explain: "Câu hỏi hiện tại đơn → Does + S + V1."
+    },
+    {
+      q: "My brother ______ to music every night. (listen)",
+      answers: ["listens"],
+      explain: "Hiện tại đơn (+): Thói quen ở hiện tại, chủ ngữ số ít."
+    },
+    {
+      q: "They ______ a new car last month. (not/buy)",
+      answers: ["did not buy", "didn't buy"],
+      explain: "Quá khứ đơn (-): Dấu hiệu 'last month' -> didn't + V1."
+    },
+    {
+      q: "______ you ______ the housework tomorrow? (do)",
+      answers: ["Will", "do"],
+      explain: "Tương lai đơn (?): Dấu hiệu 'tomorrow' -> Will + S + V1?"
+    },
+    {
+      q: "She ______ very tired after the trip yesterday. (be)",
+      answers: ["was"],
+      explain: "Quá khứ đơn với To be: 'She' đi với 'was'."
+    },
+    {
+      q: "The Earth ______ around the Sun. (go)",
+      answers: ["goes"],
+      explain: "Hiện tại đơn: Sự thật hiển nhiên, chủ ngữ số ít thêm 'es'."
+    },
+    {
+      q: "I ______ to the party next weekend. (not/go)",
+      answers: ["will not go", "won't go"],
+      explain: "Tương lai đơn (-): Dấu hiệu 'next weekend' -> won't + V1."
+    },
+    {
+      q: "______ he ______ his teeth twice a day? (brush)",
+      answers: ["Does", "brush"],
+      explain: "Hiện tại đơn (?): Thói quen hàng ngày, chủ ngữ 'he' dùng 'Does'."
+    },
+    {
+      q: "We ______ to Da Lat three years ago. (move)",
+      answers: ["moved"],
+      explain: "Quá khứ đơn (+): Dấu hiệu 'ago', động từ có quy tắc thêm 'ed'."
+    },
+    {
+      q: "Listen! I think the rain ______ soon. (stop)",
+      answers: ["will stop"],
+      explain: "Tương lai đơn: Dự đoán một sự việc sắp xảy ra."
+    },
+    {
+      q: "They ______ at the office right now. (not/be)",
+      answers: ["are not", "aren't"],
+      explain: "Hiện tại đơn với To be: 'They' đi với 'aren't'."
+    },
+    {
+      q: "Where ______ you ______ last night? (be)",
+      answers: ["were"],
+      explain: "Quá khứ đơn với To be: Câu hỏi với 'you' dùng 'were'."
+    },
+    {
+      q: "Water ______ at 100 degrees Celsius. (boil)",
+      answers: ["boils"],
+      explain: "Hiện tại đơn: Sự thật hiển nhiên."
+    },
+    {
+      q: "______ she ______ you a letter next week? (send)",
+      answers: ["Will", "send"],
+      explain: "Tương lai đơn (?): Dấu hiệu 'next week'."
+    },
+    {
+      q: "I ______ any coffee this morning. (not/drink)",
+      answers: ["did not drink", "didn't drink"],
+      explain: "Quá khứ đơn (-): Sự việc đã xảy ra và kết thúc trong sáng nay."
+    },
+    {
+      q: "My parents ______ very busy today. (be)",
+      answers: ["are"],
+      explain: "Hiện tại đơn với To be: 'My parents' là số nhiều."
+    },
+    {
+      q: "He ______ the window two hours ago. (break)",
+      answers: ["broke"],
+      explain: "Quá khứ đơn (+): Động từ bất quy tắc (break -> broke)."
+    },
+    {
+      q: "If it's sunny, we ______ camping. (go)",
+      answers: ["will go"],
+      explain: "Tương lai đơn: Mệnh đề chính trong câu điều kiện loại 1."
+    },
+    {
+      q: "______ your sister ______ oranges? (like)",
+      answers: ["Does", "like"],
+      explain: "Hiện tại đơn (?): Hỏi về sở thích, chủ ngữ số ít."
+    },
+    {
+      q: "The students ______ the exam last Friday. (not/fail)",
+      answers: ["did not fail", "didn't fail"],
+      explain: "Quá khứ đơn (-): Trợ động từ 'did not' + V1."
+    },
+    {
+      q: "I promise I ______ late again. (not/be)",
+      answers: ["will not be", "won't be"],
+      explain: "Tương lai đơn: Câu hứa hẹn với 'promise'."
+    },
+    {
+      q: "They ______ football in the park every Sunday. (play)",
+      answers: ["play"],
+      explain: "Hiện tại đơn (+): Thói quen, chủ ngữ số nhiều giữ nguyên V."
+    },
+    {
+      q: "______ you ______ to the zoo last Sunday? (go)",
+      answers: ["Did", "go"],
+      explain: "Quá khứ đơn (?): Did + S + V1?"
+    },
+    {
+      q: "She ______ a famous singer in the future. (be)",
+      answers: ["will be"],
+      explain: "Tương lai đơn: Dự đoán tương lai."
+    },
+    {
+      q: "Cats ______ mice. (catch)",
+      answers: ["catch"],
+      explain: "Hiện tại đơn: Bản năng động vật, số nhiều giữ nguyên V."
+    },
+    {
+      q: "It ______ cold yesterday. (not/be)",
+      answers: ["was not", "wasn't"],
+      explain: "Quá khứ đơn với To be: 'It' đi với 'wasn't'."
+    },
+    {
+      q: "When ______ they ______ their homework? (finish)",
+      answers: ["do", "finish"],
+      explain: "Hiện tại đơn (?): Hỏi về hành động lặp lại."
+    },
+    {
+      q: "I ______ a beautiful bird in the garden yesterday. (see)",
+      answers: ["saw"],
+      explain: "Quá khứ đơn (+): Động từ bất quy tắc (see -> saw)."
+    },
+    {
+      q: "Wait! I ______ you with those bags. (help)",
+      answers: ["will help"],
+      explain: "Tương lai đơn: Quyết định ngay tại thời điểm nói."
+    },
+    {
+      q: "My father ______ to work by bus every day. (not/go)",
+      answers: ["does not go", "doesn't go"],
+      explain: "Hiện tại đơn (-): Chủ ngữ số ít dùng 'doesn't'."
+    },
+    {
+      q: "______ your mother ______ a cake last night? (make)",
+      answers: ["Did", "make"],
+      explain: "Quá khứ đơn (?): Dấu hiệu 'last night'."
+    },
+    {
+      q: "The train ______ at 9 p.m. tonight. (leave)",
+      answers: ["leaves"],
+      explain: "Hiện tại đơn: Diễn tả lịch trình, thời khóa biểu."
+    },
+    {
+      q: "We ______ to the museum tomorrow morning. (not/visit)",
+      answers: ["will not visit", "won't visit"],
+      explain: "Tương lai đơn (-): Phủ định cho dự định."
+    },
+    {
+      q: "I ______ a student ten years ago. (be)",
+      answers: ["was"],
+      explain: "Quá khứ đơn với To be: 'I' đi với 'was'."
+    },
+    {
+      q: "How ______ you ______ to school everyday? (go)",
+      answers: ["do", "go"],
+      explain: "Hiện tại đơn (?): Hỏi về cách thức di chuyển."
+    },
+    {
+      q: "They ______ the house blue last week. (paint)",
+      answers: ["painted"],
+      explain: "Quá khứ đơn (+): Hành động đã kết thúc."
+    },
+    {
+      q: "Perhaps she ______ the meeting. (join)",
+      answers: ["will join"],
+      explain: "Tương lai đơn: Dự đoán không chắc chắn với 'Perhaps'."
+    },
+    {
+      q: "Rice ______ in tropical countries. (grow)",
+      answers: ["grows"],
+      explain: "Hiện tại đơn: Sự thật hiển nhiên, Rice không đếm được (số ít)."
+    },
+    {
+      q: "The children ______ very naughty yesterday. (not/be)",
+      answers: ["were not", "weren't"],
+      explain: "Quá khứ đơn với To be: 'The children' (số nhiều) dùng 'weren't'."
+    },
+    {
+      q: "______ he ______ the gift tomorrow? (receive)",
+      answers: ["Will", "receive"],
+      explain: "Tương lai đơn (?): Will + S + V1?"
+    },
+    {
+      q: "He ______ his keys on the table this morning. (leave)",
+      answers: ["left"],
+      explain: "Quá khứ đơn (+): Động từ bất quy tắc (leave -> left)."
+    },
+    {
+      q: "My friends ______ me often. (not/call)",
+      answers: ["do not call", "don't call"],
+      explain: "Hiện tại đơn (-): Chủ ngữ số nhiều dùng 'don't'."
+    },
+    {
+      q: "Where ______ you ______ last summer holiday? (spend)",
+      answers: ["did", "spend"],
+      explain: "Quá khứ đơn (?): Câu hỏi có từ để hỏi."
+    },
+    {
+      q: "I think people ______ on Mars in the future. (live)",
+      answers: ["will live"],
+      explain: "Tương lai đơn: Dự đoán tương lai xa."
+    },
+    {
+      q: "The flowers ______ fresh this morning. (be)",
+      answers: ["are"],
+      explain: "Hiện tại đơn với To be: 'Flowers' số nhiều."
+    },
+    {
+      q: "She ______ a letter to her pen pal yesterday. (write)",
+      answers: ["wrote"],
+      explain: "Quá khứ đơn (+): write -> wrote."
+    },
+    {
+      q: "______ we ______ dinner out tonight? (have)",
+      answers: ["Will", "have"],
+      explain: "Tương lai đơn (?): Gợi ý hoặc hỏi về kế hoạch tối nay."
+    },
+    {
+      q: "The sun ______ in the West. (not/rise)",
+      answers: ["does not rise", "doesn't rise"],
+      explain: "Hiện tại đơn (-): Sự thật hiển nhiên."
+    },
+    {
+      q: "I ______ my teacher at the supermarket yesterday. (meet)",
+      answers: ["met"],
+      explain: "Quá khứ đơn (+): meet -> met."
+    }
+  ],
+
+  2: [
+    {
+      q: "My sister ______ her homework at 8 p.m every day. (finish)",
+      answers: ["finishes"],
+      explain: "Hiện tại đơn (+): Chủ ngữ số ít (My sister) nên động từ thêm 'es'."
+    },
+    {
+      q: "They ______ to the cinema two days ago. (not/go)",
+      answers: ["did not go", "didn't go"],
+      explain: "Quá khứ đơn (-): Có dấu hiệu 'ago' -> dùng trợ động từ didn't + V-inf."
+    },
+    {
+      q: "______ you ______ the English club next week? (join)",
+      answers: ["Will", "join"],
+      explain: "Tương lai đơn (?): Dấu hiệu 'next week' -> dùng Will + S + V-inf?"
+    },
+    {
+      q: "The children ______ very quiet during the lesson yesterday. (be)",
+      answers: ["were"],
+      explain: "Quá khứ đơn với To be: Chủ ngữ số nhiều (The children) -> dùng were."
+    },
+    {
+      q: "My father ______ coffee for breakfast. (not/drink)",
+      answers: ["does not drink", "doesn't drink"],
+      explain: "Hiện tại đơn (-): Thói quen, chủ ngữ số ít dùng doesn't."
+    },
+    {
+      q: "I promise I ______ your secret to anyone. (not/tell)",
+      answers: ["will not tell", "won't tell"],
+      explain: "Tương lai đơn: Lời hứa dùng won't + V-inf."
+    },
+    {
+      q: "______ he ______ a new house in 2020? (buy)",
+      answers: ["Did", "buy"],
+      explain: "Quá khứ đơn (?): Mốc thời gian 'in 2020' -> dùng Did + S + V-inf?"
+    },
+    {
+      q: "Light ______ faster than sound. (travel)",
+      answers: ["travels"],
+      explain: "Hiện tại đơn: Sự thật hiển nhiên, chủ ngữ số ít."
+    },
+    {
+      q: "We ______ to the beach if the weather is fine tomorrow. (go)",
+      answers: ["will go"],
+      explain: "Tương lai đơn: Câu điều kiện loại 1, mệnh đề chính chia tương lai."
+    },
+    {
+      q: "I ______ any birds in the sky last night. (not/see)",
+      answers: ["did not see", "didn't see"],
+      explain: "Quá khứ đơn (-): see chuyển sang phủ định là didn't see."
+    },
+    {
+      q: "Where ______ she ______ from? (come)",
+      answers: ["does", "come"],
+      explain: "Hiện tại đơn (?): Hỏi về nguồn gốc, dùng Does cho chủ ngữ 'she'."
+    },
+    {
+      q: "They ______ very happy when they heard the news. (be)",
+      answers: ["were"],
+      explain: "Quá khứ đơn với To be: Diễn tả trạng thái đã xảy ra."
+    },
+    {
+      q: "The plane ______ off at 10 a.m tomorrow morning. (take)",
+      answers: ["takes"],
+      explain: "Hiện tại đơn: Diễn tả lịch trình cố định của máy bay/tàu xe."
+    },
+    {
+      q: "______ you ______ me with this exercise, please? (help)",
+      answers: ["Will", "help"],
+      explain: "Tương lai đơn (?): Lời yêu cầu giúp đỡ lịch sự."
+    },
+    {
+      q: "He ______ his keys on the bus yesterday morning. (forget)",
+      answers: ["forgot"],
+      explain: "Quá khứ đơn (+): Động từ bất quy tắc (forget -> forgot)."
+    },
+    {
+      q: "It ______ often ______ in this season. (not/rain)",
+      answers: ["does not", "rain", "doesn't", "rain"],
+      explain: "Hiện tại đơn (-): 'often' là dấu hiệu nhận biết, dùng doesn't cho 'it'."
+    },
+    {
+      q: "I think people ______ more online in the future. (shop)",
+      answers: ["will shop"],
+      explain: "Tương lai đơn: Dự đoán sau 'I think'."
+    },
+    {
+      q: "______ your teacher ______ angry with you yesterday? (be)",
+      answers: ["Was"],
+      explain: "Quá khứ đơn với To be (?): Chủ ngữ số ít (your teacher) -> Was."
+    },
+    {
+      q: "We ______ breakfast together every morning. (have)",
+      answers: ["have"],
+      explain: "Hiện tại đơn (+): Thói quen với chủ ngữ số nhiều."
+    },
+    {
+      q: "She ______ to me for a long time. (not/write)",
+      answers: ["did not write", "didn't write"],
+      explain: "Quá khứ đơn (-): Hành động đã xảy ra trong quá khứ."
+    },
+    {
+      q: "Maybe they ______ us during their trip. (visit)",
+      answers: ["will visit"],
+      explain: "Tương lai đơn: Dự đoán có thể xảy ra với 'Maybe'."
+    },
+    {
+      q: "______ the moon ______ around the Earth? (move)",
+      answers: ["Does", "move"],
+      explain: "Hiện tại đơn (?): Sự thật hiển nhiên, chủ ngữ số ít."
+    },
+    {
+      q: "I ______ a letter to my pen pal last week. (send)",
+      answers: ["sent"],
+      explain: "Quá khứ đơn (+): Động từ bất quy tắc (send -> sent)."
+    },
+    {
+      q: "The movie ______ very interesting. (not/be)",
+      answers: ["is not", "isn't"],
+      explain: "Hiện tại đơn với To be: Nhận xét về một vật."
+    },
+    {
+      q: "______ you ______ at home tonight? (stay)",
+      answers: ["Will", "stay"],
+      explain: "Tương lai đơn (?): Hỏi về kế hoạch tối nay."
+    },
+    {
+      q: "My brother ______ playing video games. (love)",
+      answers: ["loves"],
+      explain: "Hiện tại đơn (+): Sở thích, chủ ngữ số ít."
+    },
+    {
+      q: "They ______ the competition last year. (not/win)",
+      answers: ["did not win", "didn't win"],
+      explain: "Quá khứ đơn (-): Dấu hiệu 'last year'."
+    },
+    {
+      q: "Wait! I ______ the door for you. (open)",
+      answers: ["will open"],
+      explain: "Tương lai đơn: Quyết định ngay tại lúc nói."
+    },
+    {
+      q: "______ your parents ______ at the bank? (work)",
+      answers: ["Do", "work"],
+      explain: "Hiện tại đơn (?): Chủ ngữ số nhiều dùng Do."
+    },
+    {
+      q: "I ______ my old friend at the supermarket yesterday. (meet)",
+      answers: ["met"],
+      explain: "Quá khứ đơn (+): Động từ bất quy tắc (meet -> met)."
+    },
+    {
+      q: "It ______ cold tonight, so wear a coat. (be)",
+      answers: ["will be"],
+      explain: "Tương lai đơn: Dự đoán thời tiết."
+    },
+    {
+      q: "She ______ much about history. (not/know)",
+      answers: ["does not know", "doesn't know"],
+      explain: "Hiện tại đơn (-): Phủ định khả năng/kiến thức ở hiện tại."
+    },
+    {
+      q: "______ they ______ to the party last night? (come)",
+      answers: ["Did", "come"],
+      explain: "Quá khứ đơn (?): Câu hỏi có dấu hiệu 'last night'."
+    },
+    {
+      q: "The flowers ______ beautiful in the garden. (be)",
+      answers: ["are"],
+      explain: "Hiện tại đơn với To be: Miêu tả đặc điểm vật số nhiều."
+    },
+    {
+      q: "Computers ______ more intelligent in 50 years. (become)",
+      answers: ["will become"],
+      explain: "Tương lai đơn: Dự đoán về tương lai xa."
+    },
+    {
+      q: "We ______ lunch at a restaurant yesterday. (eat)",
+      answers: ["ate"],
+      explain: "Quá khứ đơn (+): Động từ bất quy tắc (eat -> ate)."
+    },
+    {
+      q: "He ______ his car once a week. (not/wash)",
+      answers: ["does not wash", "doesn't wash"],
+      explain: "Hiện tại đơn (-): Tần suất thực hiện hành động."
+    },
+    {
+      q: "______ you ______ me the salt, please? (pass)",
+      answers: ["Will", "pass"],
+      explain: "Tương lai đơn (?): Lời yêu cầu thực hiện hành động."
+    },
+    {
+      q: "My grandparents ______ in a small village many years ago. (live)",
+      answers: ["lived"],
+      explain: "Quá khứ đơn (+): Động từ có quy tắc thêm 'ed'."
+    },
+    {
+      q: "How many languages ______ she ______? (speak)",
+      answers: ["does", "speak"],
+      explain: "Hiện tại đơn (?): Hỏi về khả năng của một người."
+    },
+    {
+      q: "The train ______ at the station ten minutes ago. (arrive)",
+      answers: ["arrived"],
+      explain: "Quá khứ đơn (+): Dấu hiệu 'ago'."
+    },
+    {
+      q: "I ______ the window. It's too hot in here. (open)",
+      answers: ["will open"],
+      explain: "Tương lai đơn: Quyết định tức thì."
+    },
+    {
+      q: "They ______ busy tomorrow morning. (not/be)",
+      answers: ["will not be", "won't be"],
+      explain: "Tương lai đơn (-): Phủ định của trạng thái trong tương lai."
+    },
+    {
+      q: "______ he ______ you a gift on your last birthday? (give)",
+      answers: ["Did", "give"],
+      explain: "Quá khứ đơn (?): Hỏi về sự việc đã qua."
+    },
+    {
+      q: "We ______ vegetables in our garden every spring. (plant)",
+      answers: ["plant"],
+      explain: "Hiện tại đơn (+): Hành động lặp lại hằng năm."
+    },
+    {
+      q: "The museum ______ on Mondays. (not/open)",
+      answers: ["does not open", "doesn't open"],
+      explain: "Hiện tại đơn (-): Quy định/Lịch trình của một nơi."
+    },
+    {
+      q: "I ______ my homework before dinner yesterday. (finish)",
+      answers: ["finished"],
+      explain: "Quá khứ đơn (+): Động từ có quy tắc."
+    },
+    {
+      q: "Who ______ the next president? (be)",
+      answers: ["will be"],
+      explain: "Tương lai đơn (?): Câu hỏi dự đoán tương lai."
+    },
+    {
+      q: "______ your brother ______ dogs? (fear)",
+      answers: ["Does", "fear"],
+      explain: "Hiện tại đơn (?): Hỏi về tâm lý/cảm xúc ở hiện tại."
+    },
+    {
+      q: "They ______ their house last month. (sell)",
+      answers: ["sold"],
+      explain: "Quá khứ đơn (+): Động từ bất quy tắc (sell -> sold)."
+    }
+  ],
+
+
+};
+
+/******** RENDER QUESTION ********/
+function renderQuestion(item, idx, topic){
+  let text = item.q;
+  let blankCount = 0;
+
+  text = text.replace(/_+/g, () => {
+    const html = `<input class="blankInput" id="t${topic}q${idx}b${blankCount}">`;
+    blankCount++;
+    return html;
+  });
+
+  // highlight verb hint
+  return text.replace(/\((.*?)\)/g, "<span class='blankMark'>($1)</span>");
+}
+
+/******** LOAD ********/
+function loadExercises(){
+  const topic = topicSelect.value;
+  const box = document.getElementById("exerciseBox");
+  const list = exercises[topic];
+  let html = "";
+
+  list.forEach((item, idx) => {
+    html += `
+      <div class="q-box">
+        <div>${idx+1}. ${renderQuestion(item, idx, topic)}</div>
+        <button class="check-btn" onclick="checkAnswer(${idx}, ${topic})">Check</button>
+        <div class="result" id="res${topic}_${idx}"></div>
+      </div>
+    `;
+  });
+
+  box.innerHTML = html;
+}
+
+/******** CHECK ANSWER (ANTI CRASH) ********/
+function checkAnswer(idx, topic){
+  const item = exercises[topic][idx];
+  const res = document.getElementById(`res${topic}_${idx}`);
+  let correct = true;
+
+  for(let i = 0; i < item.answers.length; i++){
+    const input = document.getElementById(`t${topic}q${idx}b${i}`);
+
+    if(!input){
+      console.warn("Missing blank:", topic, idx, i);
+      correct = false;
+      continue;
+    }
+
+    const val = input.value.trim().toLowerCase();
+    const ans = item.answers[i].toLowerCase();
+
+    if(val !== ans) correct = false;
+  }
+
+  if(correct){
+    res.innerHTML = "Đúng rồi!";
+    res.style.color = "green";
+  } else {
+    res.innerHTML = `Sai → ${item.answers.join(" / ")}<br>${item.explain}`;
+    res.style.color = "red";
+  }
+}
+
+/******** INIT ********/
+document.getElementById("topicSelect").onchange = loadExercises;
+loadExercises();
+
+</script>
 
 </body>
 </html>
