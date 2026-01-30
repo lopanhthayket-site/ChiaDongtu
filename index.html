@@ -1960,30 +1960,27 @@ function loadExercises(){
 function checkAnswer(idx, topic){
   const item = exercises[topic][idx];
   const res = document.getElementById(`res${topic}_${idx}`);
+
   let correct = true;
 
-  for(let i = 0; i < item.answers.length; i++){
+  item.answers.forEach((ansGroup, i) => {
     const input = document.getElementById(`t${topic}q${idx}b${i}`);
-
-    if(!input){
-      console.warn("Missing blank:", topic, idx, i);
-      correct = false;
-      continue;
-    }
+    if(!input){ correct=false; return; }
 
     const val = input.value.trim().toLowerCase();
-    const ans = item.answers[i].toLowerCase();
+    const group = Array.isArray(ansGroup) ? ansGroup : [ansGroup];
 
-    if(val !== ans) correct = false;
-  }
+    if(!group.map(a=>a.toLowerCase()).includes(val)){
+      correct = false;
+    }
+  });
 
-if(correct){
-  res.innerHTML = "Đúng rồi!";
-  res.style.color = "green";
-  showFireworks(); // 🎆 THÊM DÒNG NÀY
-} else {
-
-    res.innerHTML = `Chưa đúng rồi! → ${item.answers.join(" / ")}<br>${item.explain}`;
+  if(correct){
+    res.innerHTML = "Đúng rồi!";
+    res.style.color = "green";
+    showFireworks();
+  } else {
+    res.innerHTML = `Chưa đúng rồi! → ${item.answers.flat().join(" / ")}<br>${item.explain}`;
     res.style.color = "red";
   }
 }
