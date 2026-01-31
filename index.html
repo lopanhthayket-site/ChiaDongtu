@@ -1947,7 +1947,6 @@ function loadExercises(){
     html += `
       <div class="q-box">
         <div>${idx+1}. ${renderQuestion(item, idx, topic)}</div>
-        <button class="check-btn" onclick="checkAnswer(${idx}, ${topic})">Check</button>
         <div class="result" id="res${topic}_${idx}"></div>
       </div>
     `;
