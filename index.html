@@ -200,6 +200,8 @@ footer {
     <option value="5">Nhóm thì hoàn thành</option>
     <option value="6">Tổng hợp #1</option>
     <option value="7">Tổng hợp #2</option>
+    <option value="8">V - To V - Ving #1</option>
+    <option value="9">V - To V - Ving #2</option>
 
   </select>
 </div>
@@ -1704,11 +1706,6 @@ const exercises = {
 
   7: [
     {
-      q: "I ______ a dentist appointment at 3 p.m today. (have)",
-      answers: ["am going to have"],
-      explain: "Tương lai gần: Diễn tả một kế hoạch đã được sắp đặt trước."
-    },
-    {
       q: "The kids ______ in the garden when it started to thunder. (not/play)",
       answers: ["were not playing", "weren't playing"],
       explain: "Quá khứ tiếp diễn (-): Phủ định hành động đang diễn ra tại một thời điểm quá khứ."
@@ -1727,11 +1724,6 @@ const exercises = {
       q: "I ______ you with the cooking if you are tired. (help)",
       answers: ["will help"],
       explain: "Tương lai đơn: Đưa ra lời đề nghị giúp đỡ ngay tại thời điểm nói."
-    },
-    {
-      q: "Look at the man on the bridge! He ______ jump! (be going to)",
-      answers: ["is going to"],
-      explain: "Tương lai gần: Dự đoán dựa trên bằng chứng hiện tại đang quan sát thấy."
     },
     {
       q: "She ______ (not/be) at the meeting yesterday morning. (be)",
@@ -1764,11 +1756,6 @@ const exercises = {
       explain: "Hiện tại hoàn thành: Dấu hiệu 'since'."
     },
     {
-      q: "______ they ______ a new house next year? (buy)",
-      answers: ["Are", "going to buy"],
-      explain: "Tương lai gần: Hỏi về dự định, kế hoạch."
-    },
-    {
       q: "Listen! Someone ______ my name outside. (call)",
       answers: ["is calling"],
       explain: "Hiện tại tiếp diễn: Hành động đang xảy ra (Listen!)."
@@ -1792,11 +1779,6 @@ const exercises = {
       q: "My father ______ to work by car every day. (not/go)",
       answers: ["does not go", "doesn't go"],
       explain: "Hiện tại đơn: Thói quen/Sự thật."
-    },
-    {
-      q: "I ______ my project this weekend. I have all the materials. (complete)",
-      answers: ["am going to complete"],
-      explain: "Tương lai gần: Dự định đã có sự chuẩn bị."
     },
     {
       q: "______ you ______ anything at the moment? (read)",
@@ -1853,10 +1835,6 @@ const exercises = {
       answers: ["were not", "weren't"],
       explain: "Quá khứ đơn với To be: Phản ứng tại một thời điểm quá khứ."
     },
-   { q: "______ your parents ______ a new car next month? (buy)",
-      answers: ["Are", "going to buy"],
-      explain: "Tương lai gần: Hỏi về kế hoạch đã định."
-    },
     {
       q: "The flowers ______ if you don't water them. (die)",
       answers: ["will die"],
@@ -1908,16 +1886,221 @@ const exercises = {
       explain: "Hiện tại đơn: Trạng thái sở hữu ở hiện tại."
     },
     {
-      q: "I ______ my bike to school tomorrow. (ride)",
-      answers: ["am going to ride"],
-      explain: "Tương lai gần: Dự định cá nhân."
-    },
-    {
       q: "I ______ (not/be) to that city for ages. (be)",
       answers: ["have not been", "haven't been"],
       explain: "Hiện tại hoàn thành: Dấu hiệu 'for ages'."
     }
   ],
+
+
+  8: [
+  {
+    q: "When will you finish (repair) _____________ my car?",
+    answers: ["repairing"],
+    explain: "Sau 'finish' luôn đi kèm với danh động từ (V-ing)."
+  },
+  {
+    q: "Don’t forget (do) _______________ your homework.",
+    answers: ["to do"],
+    explain: "Forget + to V: Nhắc nhở một việc phải thực hiện trong tương lai."
+  },
+  {
+    q: "This job offers young people a real chance __________ valuable work experience. (gain)",
+    answers: ["to gain"],
+    explain: "Cấu trúc 'Chance + to V': Cơ hội để làm việc gì đó."
+  },
+  {
+    q: "He used to fall asleep without (take) ___________ his shoes off.",
+    answers: ["taking"],
+    explain: "Sau giới từ (without) động từ phải ở dạng V-ing."
+  },
+  {
+    q: "My father likes (read) ___________ newspapers before going to work.",
+    answers: ["reading"],
+    explain: "Like + V-ing: Diễn tả sở thích mang tính lâu dài, thói quen."
+  },
+  {
+    q: "My grandfather is used to (get) _____________ up early in the morning.",
+    answers: ["getting"],
+    explain: "Cấu trúc 'Be used to + V-ing': Quen với việc gì đó ở hiện tại."
+  },
+  {
+    q: "I find it difficult __________ up early in winter. (get)",
+    answers: ["to get"],
+    explain: "Cấu trúc giả chủ ngữ: S + find + it + adj + to V."
+  },
+  {
+    q: "I’m interested in (play) ______________computer games.",
+    answers: ["playing"],
+    explain: "Sau cụm tính từ + giới từ (interested in) là V-ing."
+  },
+  {
+    q: "My watch keeps (stop) ___________.",
+    answers: ["stopping"],
+    explain: "Keep + V-ing: Tiếp tục hoặc lặp lại một hành động nào đó."
+  },
+  {
+    q: "I remember (meet) ____________ you somewhere last month.",
+    answers: ["meeting"],
+    explain: "Remember + V-ing: Nhớ về một sự việc đã xảy ra trong quá khứ."
+  },
+  {
+    q: "Why do you decide (choose) _____________this book?",
+    answers: ["to choose"],
+    explain: "Sau động từ 'decide' là động từ nguyên mẫu có 'to' (To-V)."
+  },
+  {
+    q: "Would you like (come) _____________to my party?",
+    answers: ["to come"],
+    explain: "Cấu trúc mời mọc: 'Would like + to V'."
+  },
+  {
+    q: "The road is too narrow __________ safely. (drive)",
+    answers: ["to drive"],
+    explain: "Cấu trúc quá... để làm gì: Too + adj + to V."
+  },
+  {
+    q: "They are looking forward to (visit) _______________us.",
+    answers: ["visiting"],
+    explain: "Cụm từ cố định: Look forward to + V-ing (Mong đợi điều gì)."
+  },
+  {
+    q: "She doesn’t know how __________ this word. (pronounce)",
+    answers: ["to pronounce"],
+    explain: "Từ để hỏi (how/what/where...) + to V."
+  },
+  {
+    q: "Would you mind (buy) ____________ me a newspaper?",
+    answers: ["buying"],
+    explain: "Cấu trúc yêu cầu lịch sự: Would you mind + V-ing?"
+  },
+  {
+    q: "It’s no use (wait) __________ for him any longer.",
+    answers: ["waiting"],
+    explain: "Cấu trúc 'It's no use + V-ing': Vô ích khi làm việc gì đó."
+  },
+  {
+    q: "They managed (finish) __________ the project on time.",
+    answers: ["to finish"],
+    explain: "Sau động từ 'manage' là động từ nguyên mẫu có 'to' (To-V): Xoay sở để làm gì."
+  },
+  {
+    q: "My teacher permits us (use) __________ calculators in the exam.",
+    answers: ["to use"],
+    explain: "Cấu trúc 'Permit + O + to V': Cho phép ai đó làm gì."
+  },
+  {
+    q: "You should avoid (make) __________ noise in the library.",
+    answers: ["making"],
+    explain: "Sau động từ 'avoid' luôn đi kèm với danh động từ (V-ing): Tránh làm việc gì."
+  }
+  ],
+  
+9: [
+  {
+    q: "1. I saw him (climb) __________ over the fence yesterday and run away.",
+    answers: ["climb"],
+    explain: "Cấu trúc 'See + O + V-bare': Chứng kiến toàn bộ hành động từ đầu đến cuối."
+  },
+  {
+    q: "2. The doctor advised me (stay) __________ in bed for a few days.",
+    answers: ["to stay"],
+    explain: "Cấu trúc 'Advise + O + to V': Khuyên ai đó làm gì."
+  },
+  {
+    q: "3. My parents never let me (go) __________ out late at night.",
+    answers: ["go"],
+    explain: "Sau động từ 'Let + O' là động từ nguyên mẫu không 'to' (V-bare)."
+  },
+  {
+    q: "4. We decided (not/buy) __________ the house because it was too old.",
+    answers: ["not to buy"],
+    explain: "Cấu trúc phủ định với 'decide': Decide + not + to V."
+  },
+  {
+    q: "5. I can't help (laugh) __________ whenever I see that cartoon.",
+    answers: ["laughing"],
+    explain: "Cụm từ 'Can't help + V-ing': Không thể nhịn được/không thể không làm gì."
+  },
+  {
+    q: "6. It’s very kind of you (help) __________ me with the heavy bags.",
+    answers: ["to help"],
+    explain: "Cấu trúc 'It's + adj + of someone + to V': Thật... khi ai đó làm gì."
+  },
+  {
+    q: "7. Do you suggest (go) __________ to the cinema tonight?",
+    answers: ["going"],
+    explain: "Sau động từ 'suggest' là danh động từ (V-ing)."
+  },
+  {
+    q: "8. The teacher made the students (rewrite) __________ the essay.",
+    answers: ["rewrite"],
+    explain: "Cấu trúc sai khiến: 'Make + O + V-bare' (Bắt ai đó làm gì)."
+  },
+  {
+    q: "9. I would rather (stay) __________ at home than go to the party.",
+    answers: ["stay"],
+    explain: "Sau 'Would rather' là động từ nguyên mẫu không 'to' (V-bare)."
+  },
+  {
+    q: "10. He denied (steal) __________ the money from the safe.",
+    answers: ["stealing"],
+    explain: "Sau động từ 'deny' (phủ nhận) là V-ing."
+  },
+  {
+    q: "11. It's not easy (learn) __________ a foreign language in a month.",
+    answers: ["to learn"],
+    explain: "Cấu trúc 'It + be + adj + to V': Làm gì đó thì như thế nào."
+  },
+  {
+    q: "12. They spent three hours (repair) __________ the broken washing machine.",
+    answers: ["repairing"],
+    explain: "Cấu trúc 'Spend + time + V-ing': Dành thời gian làm việc gì."
+  },
+  {
+    q: "13. I hope (be) __________ a pilot when I grow up.",
+    answers: ["to be"],
+    explain: "Sau động từ 'hope' (hy vọng) là To-V."
+  },
+  {
+    q: "14. You'd better (bring) __________ an umbrella. It looks like rain.",
+    answers: ["bring"],
+    explain: "Sau 'Had better' ('d better) là động từ nguyên mẫu không 'to' (V-bare)."
+  },
+  {
+    q: "15. Please stop (talk) __________. The exam has already started.",
+    answers: ["talking"],
+    explain: "Stop + V-ing: Dừng hẳn một hành động đang diễn ra."
+  },
+  {
+    q: "16. My brother practiced (speak) __________ English every day.",
+    answers: ["speaking"],
+    explain: "Sau động từ 'practice' là danh động từ (V-ing)."
+  },
+  {
+    q: "17. We were lucky enough (find) __________ the last tickets.",
+    answers: ["to find"],
+    explain: "Cấu trúc 'Adj + enough + to V': Đủ... để làm gì."
+  },
+  {
+    q: "18. Does she mind (work) __________ on the weekends?",
+    answers: ["working"],
+    explain: "Sau động từ 'mind' là danh động từ (V-ing)."
+  },
+  {
+    q: "19. I promise (send) __________ you a postcard from Japan.",
+    answers: ["to send"],
+    explain: "Sau động từ 'promise' (hứa) là To-V."
+  },
+  {
+    q: "20. The thief admitted (break) __________ into the house.",
+    answers: ["breaking"],
+    explain: "Sau động từ 'admit' (thừa nhận) là V-ing."
+  }
+
+  ],
+
+
 
 };
 
